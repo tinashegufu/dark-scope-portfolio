@@ -52,11 +52,25 @@ export default {
             opacity: "1",
           },
         },
+        "scroll-in": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(100px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        }
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
         "fade-in": "fade-in 0.3s ease-out",
+        "scroll-in": "scroll-in 1s ease-out forwards",
       },
+      scale: {
+        '60': '0.6',
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

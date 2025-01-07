@@ -17,7 +17,10 @@ export const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <span className="text-white font-bold text-xl">TG</span>
+            <svg width="40" height="40" viewBox="0 0 40 40" className="fill-primary">
+              <path d="M8 8h24v4H12v8h16v4H12v8h24v4H8V8z" />
+              <path d="M20 8h4v32h-4V8z" />
+            </svg>
           </div>
 
           {/* Desktop Navigation */}

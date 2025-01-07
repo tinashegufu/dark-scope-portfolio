@@ -1,11 +1,5 @@
 const team = [
   {
-    name: "Tinashe Gufu",
-    role: "Main name",
-    image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952",
-    description: "Lead designer with 10+ years of experience in digital product design.",
-  },
-  {
     name: "Blessed Chikosha",
     role: "Developer",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
@@ -51,12 +45,12 @@ export const Team = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {team.map((member, index) => (
             <div
               key={member.name}
               className="group rounded-xl overflow-hidden bg-dark-lighter border border-gray-800 
-                       hover:border-primary transition-all duration-300 animate-fade-up"
+                       hover:border-primary transition-all duration-300 animate-fade-up scale-60 mx-auto max-w-[60%]"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="aspect-square overflow-hidden">

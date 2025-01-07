@@ -18,7 +18,7 @@ export const Hero = () => {
           </div>
           
           <h1 className="text-5xl font-bold text-white">
-            Hello, I'm Mike <span className="text-primary">Washoski</span>
+            Hello, I'm Tinashe <span className="text-primary">Gufu</span>
           </h1>
           
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
@@ -28,7 +28,7 @@ export const Hero = () => {
           </p>
           
           <div className="pt-4">
-            <p className="font-serif text-2xl text-white italic">Mike Washoski</p>
+            <p className="font-serif text-2xl text-white italic">Tinashe Gufu</p>
           </div>
         </div>
         
