@@ -30,7 +30,10 @@ export const Services = () => {
       
       <div className="container relative z-10">
         <div className="text-center mb-16 animate-fade-up">
-          <p className="text-sm tracking-wider text-gray-300 uppercase mb-4">Our Services</p>
+          <p className="text-sm tracking-wider text-gray-300 uppercase mb-4 relative inline-block">
+            OUR SERVICES
+            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform origin-left"></span>
+          </p>
           <h2 className="text-4xl font-bold text-white">
             What We <span className="text-primary">Do.</span>
           </h2>

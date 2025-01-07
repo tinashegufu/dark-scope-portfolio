@@ -1,27 +1,33 @@
 const team = [
   {
-    name: "Mike Washoski",
-    role: "Designer",
+    name: "Tinashe Gufu",
+    role: "Main name",
     image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952",
     description: "Lead designer with 10+ years of experience in digital product design.",
   },
   {
-    name: "Hanna Smith",
-    role: "Designer",
+    name: "Blessed Chikosha",
+    role: "Developer",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
     description: "Specialist in user interface design and brand development.",
   },
   {
-    name: "Lexi Black",
-    role: "Designer",
+    name: "Ryan Jena",
+    role: "Developer",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     description: "Expert in user experience design and interaction patterns.",
   },
   {
-    name: "Kevin Widagdo",
-    role: "Designer",
+    name: "Clint Mukarakate",
+    role: "Developer",
     image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
     description: "Creative director focusing on innovative design solutions.",
+  },
+  {
+    name: "Kim Possible",
+    role: "Developer",
+    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+    description: "Full-stack developer with expertise in modern web technologies.",
   },
 ];
 
@@ -32,7 +38,10 @@ export const Team = () => {
       
       <div className="container relative z-10">
         <div className="text-center mb-16 animate-fade-up">
-          <p className="text-sm tracking-wider text-gray-300 uppercase mb-4">Our Team</p>
+          <p className="text-sm tracking-wider text-gray-300 uppercase mb-4 relative inline-block">
+            OUR TEAM
+            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform origin-left"></span>
+          </p>
           <h2 className="text-4xl font-bold text-white">
             Meet Expert <span className="text-primary">Team.</span>
           </h2>
@@ -42,7 +51,7 @@ export const Team = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {team.map((member, index) => (
             <div
               key={member.name}
